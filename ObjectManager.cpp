@@ -8,7 +8,7 @@ void custom::ObjectManager::readFromFile(const std::string &filename) {
     double x, y;
     double time;
     try{
-        file.open(filename);
+        file.open("../" + filename);
         if(!file.is_open()){
             std::cerr << "file doesn't open" << std::endl;
         }
